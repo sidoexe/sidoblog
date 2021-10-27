@@ -1,0 +1,147 @@
+@font-face {
+  font-family: "SIDO";
+  font-style: normal;
+  font-weight: normal;
+  src: local("VALORANT Regular"), url("fonts/Valorant Font.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Nectar-Regular";
+  src: url("fonts/Nectar-Regular.ttf.woff") format("woff"),
+    url("fonts/Nectar-Regular.ttf.svg#Nectar-Regular") format("svg"),
+    url("fonts/Nectar-Regular.ttf.eot"),
+    url("fonts/Nectar-Regular.ttf.eot?#iefix") format("embedded-opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Blacklisted Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Blacklisted Regular"),
+    url("fonts/Blacklisted.woff") format("woff");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  top: 0;
+  left: 0;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 5px;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.25);
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: #ffffff;
+}
+
+html {
+  overflow-x: hidden;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: "SIDO";
+  font-weight: normal;
+  background-color: black;
+}
+
+section {
+  width: 100%;
+  height: 100vh;
+}
+
+section#home {
+  background-image: url(assets/textures.png);
+}
+
+header {
+  z-index: 1;
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+}
+
+header .logo {
+  margin-top: 54px;
+  margin-left: 190px;
+  display: flex;
+  position: relative;
+}
+
+.btn-article {
+  color: #000000;
+  padding: 10px;
+  margin-top: 35px;
+  margin-right: 35px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  text-decoration: none;
+  font-size: 3rem;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+  margin-left: 1vw;
+  margin-right: 2vw;
+  height: 300px;
+  width: 431px;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.card .bg {
+  width: 100%;
+  height: 200px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  background-size: cover;
+  background-position: center;
+}
+
+.card-body h1 {
+  padding: 8px 8px 0px 8px;
+  font-size: 3rem;
+}
+
+button {
+  cursor: pointer;
+  font-family: "SIDO";
+  color: #ffffff;
+  background-color: black;
+  border: none;
+  padding: 3px;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 825px) {
+  section#home {
+    background-position: left;
+  }
+  header .logo {
+    margin-left: 50px;
+  }
+}
