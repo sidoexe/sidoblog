@@ -42,7 +42,7 @@ function saveArticleAndRedirect(path) {
     article.link = req.body.link
     try {
       article = await article.save()
-      res.redirect(`/articles/${article.slug}`)
+      res.redirect(`/`)
     } catch (e) {
       res.render(`articles/${path}`, { article: article })
     }
