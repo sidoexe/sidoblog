@@ -165,3 +165,8 @@ header .logo {
     margin-left: 50px;
   }
 }
+@media screen and (max-width: 453px) {
+  .btn-article {
+    font-size: 2rem;
+  }
+}
