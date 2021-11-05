@@ -165,7 +165,24 @@ header .logo {
     margin-left: 50px;
   }
 }
+
+@media screen and (max-width: 825px) {
+  .logo {
+    margin-left: -150px;
+  }
+}
+
+@media screen and (max-width: 539px) {
+  .logo {
+    zoom: 80%;
+  }
+}
+
 @media screen and (max-width: 453px) {
+  .logo {
+    margin-left: -205px;
+    zoom: 75%;
+  }
   .btn-article {
     font-size: 2rem;
   }
